@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS Custom Styles -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+
+    <title>وزارة الكهرباء | استمارة تقيم اداء العاملين في الدائرة</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+
+                <div class="card my-5">
+
+                    <form class="card-body cardbody-color p-lg-5 p-md-5 ">
+
+                        <div class="text-center">
+                            <img src="https://1.bp.blogspot.com/-7YEULdLcnfU/Xy9kI-CEYwI/AAAAAAAARic/GB55OA2QzBYRPy-y_wpzOqh3QvX0-c0UwCLcBGAsYHQ/s1600/%25D9%2588%25D8%25B2%25D8%25A7%25D8%25B1%25D8%25A9%2B%25D8%25A7%25D9%2584%25D9%2583%25D9%2587%25D8%25B1%25D8%25A8%25D8%25A7%25D8%25A1%2B%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A7%25D9%2582.png"
+                                class="img-fluid " width="200px" alt="profile">
+                        </div>
+                        <h2 class="text-center text-dark mt-2">استمارة تقيم اداء العاملين في الدائرة
+                        </h2>
+                        <div class="text-center mb-4 text-dark">
+                            يرجى ادخال البيانات في الحقول ادناه
+                        </div>
+                        <div class="mb-3">
+                            <h6>اسم الموظف:</h6>
+                            <input type="text" class="form-control" id="emp-name" aria-describedby="emp-name"
+                                placeholder="ادخل اسم الموظف">
+                        </div>
+                        <div class="mb-3">
+                            <h6>القسم والشعبة:</h6>
+                            <input type="text" class="form-control" id="emp-sec" placeholder="ادخل القسم والشعبة">
+                        </div>
+                        <div class="mb-3">
+                            <h6>تاريخ التعيين:</h6>
+
+                            <input type="date" class="form-control mb-3" id="date" name="date" style="float: right"
+                                placeholder="ادخل تاريخ التعيين">
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <h6>الشهادة الدراسية:</h6>
+                                <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                    <option value="1">شهادة جامعية</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <h6>تاريخ الحصول على الشهادة:</h6>
+                                <input type="date" class="form-control " id="date" name="date" style="float: right"
+                                    placeholder="ادخل تاريخ التعيين">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h6>الدرجة والمرتبة:</h6>
+                            <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                <option value="1">مسؤول شعبة</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <h6>مقدار الإجازات الخاصة:</h6>
+                                <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                    <option value="1">20</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <h6>مقدار الإجازات الإعتيادية:</h6>
+                                <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                    <option value="1">10</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn  btn-primary px-5 mb-5 mt-3 w-100"
+                                style="background-color: #316284;">اضافة</button>
+                        </div>
+                        <div id="" class="form-text text-center mb-5 text-dark">الرجوع الى <a href="#"
+                                class="text-dark fw-bold">الصفحة الرئيسية</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+
+        body {
+            font-family: 'Almarai', sans-serif;
+        }
+    </style>
+    <!-- Custom JavaScript -->
+    <script src="../services/index.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
