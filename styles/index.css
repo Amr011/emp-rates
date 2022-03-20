@@ -1,11 +1,6 @@
 .selector-for-some-widget {
   box-sizing: content-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
-
-body {
-  font-family: 'Almarai', sans-serif;
-}
 
 .side-navbar {
   width: 250px;
