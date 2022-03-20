@@ -18,13 +18,145 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>وزارة الكهرباء | الصفحة الرئيسية</title>
 </head>
 
 <body>
-    <div class="container">
-        <a href="/views/login.html">Login Form</a>
+
+
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand">
+                <h4>
+                    <strong>وزارة الكهرباء</strong>
+                </h4>
+            </a>
+
+            <a href="/views/login.html" class="nav-item nav-link">تسجيل الدخول</a>
+            <a href="/views/emp-rate.html" class="nav-item nav-link">تقيم الموظفين</a>
+
+
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="ابحث عن ..." aria-label="ابحث عن...">
+                <button class="btn btn-outline-primary" type="submit">البحث</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Side-Nav -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column d-md-none d-lg-block  bg-light "
+        id="sidebar" style="z-index: 9999;">
+        <ul class="nav flex-column text-white w-100">
+            <a href="#" class="nav-link  text-white my-2 ">
+                <img src="https://1.bp.blogspot.com/-7YEULdLcnfU/Xy9kI-CEYwI/AAAAAAAARic/GB55OA2QzBYRPy-y_wpzOqh3QvX0-c0UwCLcBGAsYHQ/s1600/%25D9%2588%25D8%25B2%25D8%25A7%25D8%25B1%25D8%25A9%2B%25D8%25A7%25D9%2584%25D9%2583%25D9%2587%25D8%25B1%25D8%25A8%25D8%25A7%25D8%25A1%2B%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A7%25D9%2582.png"
+                    class="img-fluid " width="200px" alt="profile">
+            </a>
+            <li href="#" class="nav-item mt-5  mx-5 border-start border-primary rounded border-5">
+                <h5><a href="#" class="nav-link">الرئيسية</a></h5>
+            </li>
+            <li href="#" class="nav-item mx-5 mt-2 ">
+                <h5><a href="#" class="nav-link text-secondary">تقيم الموظفين</a></h5>
+            </li>
+            <li href="#" class="nav-item mx-5 mt-2 ">
+                <h5><a href="#" class="nav-link text-secondary">تسجيل الخروج</a></h5>
+            </li>
+        </ul>
     </div>
+
+
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <div class=" my-5">
+
+                <form class="card-body cardbody-color p-lg-5 p-md-5 ">
+
+                    <div class="text-center pt-5">
+                    </div>
+                    <h2 class="text-center text-dark mt-2">استمارة تقيم اداء العاملين في الدائرة
+                    </h2>
+                    <div class="text-center mb-4 text-dark">
+                        يرجى ادخال البيانات في الحقول ادناه
+                    </div>
+                    <div class="mb-3">
+                        <h6>اسم الموظف:</h6>
+                        <input type="text" class="form-control" id="emp-name" aria-describedby="emp-name"
+                            placeholder="ادخل اسم الموظف">
+                    </div>
+                    <div class="mb-3">
+                        <h6>القسم والشعبة:</h6>
+                        <input type="text" class="form-control" id="emp-sec" placeholder="ادخل القسم والشعبة">
+                    </div>
+                    <div class="mb-3">
+                        <h6>تاريخ التعيين:</h6>
+
+                        <input type="date" class="form-control mb-3" id="date" name="date" style="float: right"
+                            placeholder="ادخل تاريخ التعيين">
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col">
+                            <h6>الشهادة الدراسية:</h6>
+                            <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                <option value="1">شهادة جامعية</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <h6>تاريخ الحصول على الشهادة:</h6>
+                            <input type="date" class="form-control " id="date" name="date" style="float: right"
+                                placeholder="ادخل تاريخ التعيين">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6>الدرجة والمرتبة:</h6>
+                        <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                            <option value="1">مسؤول شعبة</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col">
+                            <h6>مقدار الإجازات الخاصة:</h6>
+                            <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                <option value="1">20</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <h6>مقدار الإجازات الإعتيادية:</h6>
+                            <select class="form-select" aria-label="اختيار الشهادة الدراسية">
+                                <option value="1">10</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn  btn-primary px-5 mb-5 mt-3 w-100"
+                            style="background-color: #316284;">اضافة</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+
+        body {
+            font-family: 'Almarai', sans-serif;
+        }
+    </style>
     <!-- Custom JavaScript -->
     <script src="../services/index.js"></script>
     <!-- Bootstrap Bundle with Popper -->
